@@ -149,7 +149,23 @@ section {
 }
 
 .image-1 {
-  height: 400px;
+  height: 10px;
   width: auto;
+}
+
+.svg-image {
+  margin-left: 25%;
+  position: relative;
+}
+
+.landing-section-text {
+  position: absolute;
+  top: 17em;
+  left: -5em;
+  text-align: center;
+}
+
+.landing-section-text p {
+  place-content: center;
 }
 /*# sourceMappingURL=index.css.map */

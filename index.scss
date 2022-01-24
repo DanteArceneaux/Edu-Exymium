@@ -123,7 +123,6 @@ ul {
 
 #contact {
     color: $primary-color;
-    
     padding: 0px 5px 0px 5px;
     border-radius: 5px 5px 5px 5px;
 }
@@ -140,6 +139,24 @@ section {
     }
 
     .image-1 {
-        height: 400px;
+        height: 10px;
         width: auto;
+    }
+
+    .svg-image  {
+       
+        margin-left: 25%;
+        position: relative;
+    }
+
+    .landing-section-text {
+        position: absolute;
+        
+        top: 17em;
+        left: -5em;
+        text-align: center;
+    }
+
+    .landing-section-text p {
+        place-content: center;
     }
