@@ -31,7 +31,7 @@ body {
   position: relative;
   text-align: center;
   width: 80%;
-  height: 50px;
+  height: 30px;
   z-index: 999;
 }
 
@@ -66,6 +66,11 @@ ul {
   place-content: center;
   gap: 70px;
   padding: 10px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav-link {
@@ -146,26 +151,49 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.image-1 {
-  height: 10px;
-  width: auto;
-}
-
-.svg-image {
-  margin-left: 25%;
-  position: relative;
+  place-content: center;
 }
 
 .landing-section-text {
-  position: absolute;
-  top: 17em;
-  left: -5em;
-  text-align: center;
+  place-self: center;
+  margin: 0px 100px 100px 0px;
 }
 
-.landing-section-text p {
-  place-content: center;
+.svg-image {
+  margin-right: 300px;
+  width: 400px;
+}
+
+#amazing {
+  position: relative;
+}
+
+.landing-section-text h1 {
+  font-size: 80px;
+}
+
+.landing-section-text p nt {
+  font-size: 30px;
+}
+
+.p1 {
+  margin-top: 20px;
+}
+
+.landing-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-container {
+  margin-top: 20px;
+}
+
+.icon {
+  margin: 5px 20px 5px 5px;
 }
 /*# sourceMappingURL=index.css.map */
