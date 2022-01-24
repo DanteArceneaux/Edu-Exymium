@@ -136,8 +136,9 @@ section {
 
 .landing-section {
 	display: flex;
-
+    border-bottom: 2px  solid #f96353;
 	place-content: center;
+    margin-right: 6%;
 }
 
 .landing-section-text {
@@ -166,6 +167,7 @@ section {
 .landing-text-container {
 	display: flex;
 	align-items: center;
+  
 }
 
 .icon-container {
@@ -175,3 +177,54 @@ section {
 .icon {
 	margin: 5px 20px 5px 5px;
 }
+
+// scroll button
+
+.scroll-down {
+	height: 50px;
+	width: 30px;
+	border: 2px solid $primary-color;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	border: 2px solid $primary-color;
+	height: 10px;
+	width: 10px;
+	transform: translate(-50%, -100%) rotate(45deg);
+	border-top: transparent;
+	border-left: transparent;
+	animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+	top: 20%;
+	animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: 90%;
+	}
+}
+
