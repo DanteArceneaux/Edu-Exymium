@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Dongle&family=Roboto&family=Varela+Round&display=swap");
+
+$primary-color: #f96353;
+
+$background-color: #fafafa;
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Dongle", sans-serif;
+	font-size: 28px;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+body {
+	background-color: $background-color;
+	border: 2px solid black;
+}
+
+#main-container {
+	height: 200vh;
+	margin: 0% 10% 0% 10%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.298);
+}
+
+.header {
+	position: relative;
+	text-align: center;
+	width: 80%;
+	height: 50px;
+	z-index: 999;
+}
+
+nav {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav-container {
+	display: grid;
+	grid-template-columns: 1fr auto minmax(500px, 3fr) 1fr;
+	margin-left: 10%;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	grid-column: 3/5;
+	place-content: center;
+	gap: 70px;
+	padding: 10px;
+}
+
+.nav-link {
+	grid-column: 5/6;
+    color: rgb(29, 29, 29);
+}
+.nav-link:hover {
+    color: $primary-color;
+}
+
+.nav-button {
+	grid-column: 4-5;
+    background-color: transparent;
+    border: none;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+	padding: 0px 5px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.logo {
+	border: 4px solid $primary-color;
+	border-radius: 15px;
+	color: #737373;
+}
+
+// Add link animation
+
+.fancy-link {
+	text-decoration: none;
+	position: relative;
+	transform: scale(1.6);
+	transition: 0.3s;
+}
+
+.fancy-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -5px;
+	width: 100%;
+	height: 2px;
+
+	color: black;
+	background-color: currentColor;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 250ms ease-in;
+}
+.fancy-link:hover::after {
+	content: "";
+
+	transform: scaleX(1);
+	transform-origin: center;
+}
+
+#contact {
+    color: $primary-color;
+    
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+section {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.landing-section {
+       
+        display: flex;
+        
+    }
+
+    .image-1 {
+        height: 400px;
+        width: auto;
+    }
