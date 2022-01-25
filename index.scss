@@ -390,7 +390,7 @@ img {
 	top: 200px;
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 #amazing {
 	width: 900px;
@@ -444,3 +444,10 @@ img {
 	clear: both;
 	margin: 12px 6px 0 0;
 }
+
+hr {
+	color: #f96353;
+	position: relative;
+	top: 50vh
+}
+

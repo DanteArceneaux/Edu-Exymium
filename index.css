@@ -442,8 +442,8 @@ img {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 #amazing {
@@ -498,5 +498,11 @@ img {
   float: left;
   clear: both;
   margin: 12px 6px 0 0;
+}
+
+hr {
+  color: #f96353;
+  position: relative;
+  top: 50vh;
 }
 /*# sourceMappingURL=index.css.map */
