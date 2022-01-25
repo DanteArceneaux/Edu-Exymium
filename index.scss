@@ -136,44 +136,52 @@ section {
 
 .landing-section {
 	display: flex;
-    border-bottom: 2px  solid #f96353;
+	border-bottom: 2px solid #f96353;
 	place-content: center;
-    margin-right: 6%;
+}
+
+.landing-text-container {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	align-items: center;
+	border: 2px solid red;
 }
 
 .landing-section-text {
-	place-self: center;
+	display: flex;
+	border: 2px solid black;
 	margin: 0px 100px 100px 0px;
 }
 
 .svg-image {
-	margin-right: 300px;
-	width: 400px;
+	display: flex;
+	border: 2px solid black;
+	width: 800px;
+	height: 800px;
+	overflow: hidden;
+	place-content: center;
 }
 #amazing {
-	position: relative;
+	place-self: center;
 }
 
 .landing-section-text h1 {
 	font-size: 80px;
 }
-.landing-section-text p nt {
+.landing-section-text p {
 	font-size: 30px;
 }
 
 .p1 {
 	margin-top: 20px;
 }
-.landing-text-container {
-	display: flex;
-	align-items: center;
-  
-}
 
 .icon-container {
-	margin-top: 20px;
+	border: 2px solid blue;
+	margin-top: 25px;
+	width: 55px;
 }
-
 .icon {
 	margin: 5px 20px 5px 5px;
 }
@@ -187,7 +195,6 @@ section {
 	position: absolute;
 	left: 50%;
 	bottom: 20px;
-
 	border-radius: 50px;
 	cursor: pointer;
 }
@@ -227,4 +234,3 @@ section {
 		top: 90%;
 	}
 }
-
