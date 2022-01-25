@@ -397,25 +397,37 @@ img {
 	max-width: 90%;
 	margin-left: 50px;
 	object-fit: cover;
-  object-position: bottom;
+	object-position: bottom;
 }
 @media (max-width: 1038px) {
 	#amazing {
 		width: 800px;
+		height: 600px;
 		max-width: 70%;
 	}
 }
 @media (max-width: 508px) {
 	#amazing {
 		width: 800px;
-		max-width: 40%;
+		height: 450px;
+		max-width: 50%;
+		position: relative;
+		bottom: 100px;
+	}
+
+	.second-h1-text {
+		margin-left: 30px;
+	}
+
+	.mt {
+		width: 50%;
 	}
 }
 @media (max-width: 314px) {
 	#amazing {
 		position: relative;
 		width: 800px;
-		max-width: 30%;
+		max-width: 70%;
 		bottom: 200px;
 	}
 }
