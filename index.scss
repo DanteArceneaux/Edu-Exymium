@@ -15,6 +15,12 @@ $background-color: #fafafa;
 	font-size: 28px;
 }
 
+
+
+
+
+
+
 h1 {
 	font-size: 1.5rem;
 }
@@ -144,7 +150,8 @@ section {
 	display: flex;
 	flex-direction: column;
 	place-content: center;
-	align-items: center;
+	margin-top: 80px;
+	
 	border: 2px solid red;
 }
 
@@ -152,13 +159,14 @@ section {
 	display: flex;
 	border: 2px solid black;
 	margin: 0px 100px 100px 0px;
+	width:auto;
 }
 
 .svg-image {
 	display: flex;
 	border: 2px solid black;
-	width: 800px;
-	height: 800px;
+	width: 700px;
+	height: 700px;
 	overflow: hidden;
 	place-content: center;
 }
@@ -171,12 +179,42 @@ section {
 }
 .landing-section-text p {
 	font-size: 30px;
+
 }
 
 .p1 {
 	margin-top: 20px;
 }
+.p1::before {
+	content: '';
+	background: url(images/dd.svg) no-repeat;
+	width: 40px;
+    height: 40px;
+    float: left;
+    margin: 15px 6px 0 0;
+}
+.p2::before {
+	content: '';
+	background: url(images/clock.svg)  no-repeat;
+	
+	width: 40px;
+    height: 40px;
+    float: left;
+    margin: 20px 6px 0 0;
+}
+.p3::before {
+	content: '';
+	background: url(images/chat.svg)  no-repeat;
+	
+	width: 40px;
+    height: 40px;
+    float: left;
+    margin: 20px 6px 0 0;
 
+}
+.master {
+	border: 2px solid green ;
+}
 .icon-container {
 	border: 2px solid blue;
 	margin-top: 25px;
