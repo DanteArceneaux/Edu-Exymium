@@ -10,3 +10,7 @@ let scrollDown = document.querySelector(".scroll-down");
 scrollDown.addEventListener("click", function () {
 	window.scrollBy({ top: 1000, left: 0, behavior: "smooth" });
 });
+
+function sendEmail() {
+	window.location = "mailto:dantearcene@gmail.com";
+}
