@@ -38,7 +38,7 @@ body {
 p,
 h1,
 h2 {
-  color: #f96353;
+  color: #2e2e2e;
 }
 
 #main-text {
@@ -561,10 +561,19 @@ img {
   margin: 12px 6px 0 0;
 }
 
-hr {
+.hr1 {
   color: #f96353;
   position: relative;
   top: 50vh;
+  width: 80%;
+  margin-left: 10%;
+  opacity: 0.3;
+}
+
+.hr2 {
+  color: #f96353;
+  position: relative;
+  top: 60vh;
   width: 80%;
   margin-left: 10%;
   opacity: 0.3;
@@ -675,5 +684,46 @@ hr {
 
 .wifi-img {
   margin-left: 10px;
+}
+
+.section-three-container {
+  position: relative;
+  top: 700px;
+}
+
+.s3-h1 {
+  margin-top: -70px;
+  margin-bottom: 70px;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #464646;
+}
+
+.section-three-main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0 10% 0 10%;
+  gap: 100px;
+}
+
+.s3-text {
+  text-align: center;
+  line-height: 70px;
+}
+
+.s3-img {
+  margin-left: 30%;
+}
+
+.s3-p {
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
