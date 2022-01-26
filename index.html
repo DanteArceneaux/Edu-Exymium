@@ -11,6 +11,7 @@
 			type="text/javascript"
 			src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
 		></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
@@ -35,6 +36,7 @@
 					<span></span>
 				</label>
 			</header>
+			<div class="scroll-up"></div>
 
 			<div class="scroll-down"></div>
 
@@ -294,14 +296,14 @@
 				</div>
 			</div>
 
-			<hr class="hr1"/>
-
-			<section id="second-section">
+			<section id="second-section" data-aos="fade-in" data-aos-delay="20"
+			data-aos-duration="500"
+			data-aos-easing="ease-in-out">
 				<div class="second-h1">
 					<h1 class="second-h1-text">On demand, anywhere in the world.</h1>
 				</div>
 
-				<div class="under-header-container" id="under-header-container">
+				<div class="under-header-container" id="under-header-container" >
 					<div class="second-section-text-container1">
 						<div class="second-img">
 							<img src="images/cs.svg" alt="" class="wifi-img" />
@@ -318,7 +320,7 @@
 							Get assessment results fast, and share it with anyone, immediately
 						</p>
 					</div>
-					<div class="second-section-text-container3">
+					<div class="second-section-text-container3" >
 						<div class="second-img">
 							<img src="images/pig.svg" alt="" />
 						</div>
@@ -330,36 +332,37 @@
 				</div>
 			</section>
 
-			<hr class="hr2">
-
-
-
-			<section class="section-three-container">
+			<section class="section-three-container" data-aos="fade-in">
 				<h1 class="s3-h1">Feedback on progress in minutes</h1>
 
 				<main class="section-three-main-container">
+					<div class="three-left-container">
+						<div><img src="images/rabbit.svg" alt="" class="s3-img" /></div>
+						<h2 id="s3-s1" class="s3-text">Quick setup</h2>
+						<p id="s3-s2" class="s3-p">
+							An introduction that walks you through the test rules and
+							requirements
+						</p>
+					</div>
 
-				<div class="three-left-container">
-					<div><img src="images/rabbit.svg" alt="" class="s3-img"></div>
-					<h2 id="s3-s1" class="s3-text">Quick setup</h2>
-					<p id="s3-s2" class=" s3-p">An introduction that walks you through the test rules and requirements</p>
-				</div>
+					<div class="three-center-container">
+						<div><img src="images/test.svg" alt="" class="s3-img" /></div>
+						<h2 id="s3-s3" class="s3-text">Quick setup</h2>
+						<p id="s3-s4" class="s3-p">
+							An introduction that walks you through the test rules and
+							requirements
+						</p>
+					</div>
 
-
-				<div class="three-center-container">
-					<div><img src="images/test.svg" alt="" class="s3-img"></div>
-					<h2 id="s3-s3" class="s3-text">Quick setup</h2>
-					<p id="s3-s4" class=" s3-p">An introduction that walks you through the test rules and requirements</p>
-				</div>
-
-
-				<div class="three-right-container">
-					<div><img src="images/interview.svg" alt="" class="s3-img"></div>
-					<h2 id="s3-s5" class="s3-text">Quick setup</h2>
-					<p id="s3-s6" class=" s3-p">An introduction that walks you through the test rules and requirements</p>
-				</div>
-
-			</main>
+					<div class="three-right-container">
+						<div><img src="images/interview.svg" alt="" class="s3-img" /></div>
+						<h2 id="s3-s5" class="s3-text">Quick setup</h2>
+						<p id="s3-s6" class="s3-p">
+							An introduction that walks you through the test rules and
+							requirements
+						</p>
+					</div>
+				</main>
 			</section>
 		</main>
 		<script src="script.js"></script>
@@ -371,14 +374,9 @@
 				);
 			}
 		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
-<!-- <section class="main-section-grid-container">    
-
-			<div></div>
-			<div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?/h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, pariatur!</p>
-			</div>
-
-
-		</section> -->

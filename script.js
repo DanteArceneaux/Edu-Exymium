@@ -14,3 +14,5 @@ scrollDown.addEventListener("click", function () {
 function sendEmail() {
 	window.location = "mailto:dantearcene@gmail.com";
 }
+
+let scrollUp = document.querySelector(".scroll-up");
