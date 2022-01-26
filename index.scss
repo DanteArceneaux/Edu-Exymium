@@ -412,7 +412,7 @@ img {
 		height: 450px;
 		max-width: 50%;
 		position: relative;
-		bottom: 100px;
+		bottom: 150px;
 	}
 
 	.second-h1-text {
@@ -436,6 +436,24 @@ img {
 	place-self: center;
 	width: 80%;
 }
+
+@media (max-width: 508px) {
+	#main-section-text-container {
+		position: relative;
+		bottom: 200px;
+		place-self: center;
+		width: 80%;
+	}
+	.text-container {
+		width: 510px;
+	}
+
+	#second-section {
+		position: relative;
+		bottom: 200px;
+	}
+}
+
 .text-container {
 	margin-top: 20px;
 }
@@ -579,4 +597,8 @@ hr {
 
 .head {
 	margin-top: 20px;
+}
+
+.wifi-img {
+	margin-left: 10px;
 }
