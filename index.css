@@ -10,6 +10,10 @@
   font-weight: 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 li {
   text-decoration: none;
