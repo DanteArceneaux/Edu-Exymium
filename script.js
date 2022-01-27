@@ -36,3 +36,41 @@ $(window).scroll(function (event) {
 	//Updates scroll position
 	lastScroll = st;
 });
+
+// Changing background color by section	********************************************************************
+
+let header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+	let header = document.querySelector("header");
+	let links = document.querySelectorAll("a");
+	let li = document.querySelector("li");
+	let logo = document.querySelector(".logo");
+
+	let body = document.querySelector("body");
+
+	let windowPosition = window.scrollY > 1;
+
+	header.classList.toggle("scrolling-active", windowPosition);
+
+	windowPosition === true
+		? (header.style.height = "4rem")
+		: (header.style.height = "6rem");
+	windowPosition === true
+		? (header.style.transition = "1s")
+		: (header.style.height = "6rem");
+	windowPosition === true
+		? (logo.style.transition = "0.5s")
+		: (header.style.height = "6rem");
+	windowPosition === true
+		? (header.style.transition = "0.5s")
+		: (header.style.height = "6rem");
+	if (windowPosition === true) {
+		body.style.backgroundColor = "#fc5c9c";
+	} else {
+		body.style.backgroundColor = "#099bf6";
+	}
+	windowPosition === true
+		? (body.style.transition = "2s")
+		: (body.style.transition = "2s");
+});

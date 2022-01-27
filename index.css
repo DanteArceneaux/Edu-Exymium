@@ -793,4 +793,22 @@ img {
 .s3-p {
   text-align: center;
 }
+
+.section-four {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  top: 1700px;
+  position: relative;
+  place-content: center;
+}
+
+.price {
+  border: 5px solid #4e4d4d;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+  height: 90%;
+  padding-right: 45px;
+}
 /*# sourceMappingURL=index.css.map */
