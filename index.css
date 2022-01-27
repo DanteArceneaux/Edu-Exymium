@@ -654,7 +654,7 @@ img {
   -ms-grid-columns: (minmax(500px, 1fr) 1fr)[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr) 1fr);
   place-content: center;
-  height: 60vh;
+  height: 100vh;
   gap: 0px;
   max-width: 90%;
   margin-left: 5%;
@@ -795,10 +795,11 @@ img {
 }
 
 .section-four {
+  height: 100vh;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  top: 1700px;
+  top: 1900px;
   position: relative;
   place-content: center;
 }

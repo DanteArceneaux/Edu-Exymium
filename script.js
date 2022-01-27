@@ -21,7 +21,7 @@ let scrollUp = document.getElementById("scroll-up");
 let secondSection = document.getElementById("second-section");
 
 scrollDown.addEventListener("click", function () {
-	window.scrollBy({ top: 1000, left: 0, behavior: "smooth" });
+	window.scrollBy({ top: 1200, left: 0, behavior: "smooth" });
 });
 
 scrollUp.addEventListener("click", function () {
