@@ -5,6 +5,17 @@ anime({
 	// increase delay by 100ms for each elements.
 });
 
+anime({
+	targets: ".svg-pricing path",
+	strokeDashoffset: [anime.setDashoffset, 5],
+	easing: "easeInOutSine",
+	duration: 5600,
+	delay: function (el, i) {
+		return i * 0;
+	},
+	direction: "forwards",
+});
+
 let scrollDown = document.querySelector(".scroll-down");
 let scrollUp = document.getElementById("scroll-up");
 let secondSection = document.getElementById("second-section");
