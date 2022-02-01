@@ -54,8 +54,8 @@ body {
   height: 550vh;
   margin: 0% 10% 0% 10%;
   background: #ffffff;
-  -webkit-box-shadow: 0px 0px 30px #4d1c30;
-          box-shadow: 0px 0px 30px #4d1c30;
+  -webkit-box-shadow: 0px 0px 20px #3a3939;
+          box-shadow: 0px 0px 20px #3a3939;
   min-width: 100px;
 }
 

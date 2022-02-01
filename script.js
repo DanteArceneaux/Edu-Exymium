@@ -22,10 +22,36 @@ let secondSection = document.getElementById("second-section");
 
 scrollDown.addEventListener("click", function () {
 	window.scrollBy({ top: 1200, left: 0, behavior: "smooth" });
+	var sound = new Howl({
+		src: ["./sounds/whoosh.wav"],
+	});
+
+	// Clear listener after first call.
+	sound.once("load", function () {
+		sound.play();
+	});
+
+	// Fires when the sound finishes playing.
+	sound.on("end", function () {
+		console.log("Finished!");
+	});
 });
 
 scrollUp.addEventListener("click", function () {
 	window.scrollBy({ top: -1000, left: 0, behavior: "smooth" });
+	var sound = new Howl({
+		src: ["./sounds/whoosh.wav"],
+	});
+
+	// Clear listener after first call.
+	sound.repeat("repeat", function () {
+		sound.play();
+	});
+
+	// Fires when the sound finishes playing.
+	sound.repeat("end", function () {
+		console.log("Finished!");
+	});
 });
 
 function sendEmail() {
@@ -85,3 +111,5 @@ window.addEventListener("scroll", function () {
 		? (body.style.transition = "2s")
 		: (body.style.transition = "2s");
 });
+
+// *******************audio***********************
