@@ -1,6 +1,6 @@
 anime({
-	targets: ".amazing path",
-	translateX: 70,
+	targets: " .azmazing ",
+	translateX: 10,
 	delay: anime.stagger(100),
 	// increase delay by 100ms for each elements.
 });
@@ -77,7 +77,7 @@ window.addEventListener("scroll", function () {
 		? (header.style.transition = "0.5s")
 		: (header.style.height = "6rem");
 	if (windowPosition === true) {
-		body.style.backgroundColor = "#caccd1";
+		body.style.backgroundColor = "#f96353";
 	} else {
 		body.style.backgroundColor = "#fff";
 	}
