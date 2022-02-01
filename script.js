@@ -77,9 +77,9 @@ window.addEventListener("scroll", function () {
 		? (header.style.transition = "0.5s")
 		: (header.style.height = "6rem");
 	if (windowPosition === true) {
-		body.style.backgroundColor = "#fc5c9c";
+		body.style.backgroundColor = "#caccd1";
 	} else {
-		body.style.backgroundColor = "#099bf6";
+		body.style.backgroundColor = "#fff";
 	}
 	windowPosition === true
 		? (body.style.transition = "2s")

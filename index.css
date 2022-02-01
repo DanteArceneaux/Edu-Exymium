@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Fredoka+One&family=Varela+Round&display=swap");
+@import url("http://fonts.cdnfonts.com/css/paul-grotesk");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Epilogue&family=Open+Sans&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  @font-face {
+    font-family: "larsseitregular";
+    src: url("larsseit-webfont.woff2") format("woff2"), url("larsseit-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -6,8 +24,10 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 100;
+  font-family: "larsseitregular";
+  src: url("larsseit-webfont.woff2") format("woff2"), url("larsseit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -18,6 +38,12 @@ ul,
 li {
   text-decoration: none;
   list-style: none;
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
   color: inherit;
 }
 
@@ -69,6 +95,9 @@ h2 {
   width: 80%;
   height: 100px;
   z-index: 999;
+  background-color: white;
+  color: #1f1f1f;
+  letter-spacing: 2px;
 }
 
 .logo {
@@ -148,11 +177,14 @@ nav a {
     display: inline-block;
     padding: 10px;
     color: white;
+    background-color: black;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    -webkit-transition: 5s;
-    transition: 5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
   }
   .fancy-link {
     opacity: 0;
@@ -187,6 +219,14 @@ nav a {
     -webkit-transform-origin: center;
             transform-origin: center;
   }
+  #main-container {
+    height: 900vh;
+    margin: 0% 10% 0% 10%;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 30px #4d1c30;
+            box-shadow: 0px 0px 30px #4d1c30;
+    min-width: 100px;
+  }
 }
 
 .nav-toggle {
@@ -203,6 +243,10 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   place-items: center;
+}
+
+.nav-toggle-label:hover {
+  cursor: pointer;
 }
 
 .nav-toggle-label span,
@@ -321,7 +365,7 @@ nav a {
     font-size: 15px;
     font-family: "Varela Round", sans-serif;
     font-weight: 100;
-    color: #f96353;
+    color: red;
     text-align: center;
     border: 3px solid #f96353;
     border-radius: 5px 15px 5px 15px;
@@ -337,6 +381,20 @@ nav a {
             transform: scale(1.4);
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    cursor: pointer;
+  }
+  .button-options {
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    border: 3px solid #f96353;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px;
+    background: none;
+    margin: 20px 10px 0px 0px;
   }
   .contact {
     place-self: center;
@@ -375,6 +433,7 @@ img {
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .scroll-down::before,
@@ -442,6 +501,7 @@ img {
   top: 20px;
   border-radius: 50px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .scroll-up::before,
@@ -533,6 +593,14 @@ img {
     height: 600px;
     max-width: 70%;
   }
+  #main-container {
+    height: 900vh;
+    margin: 0% 10% 0% 10%;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 30px #4d1c30;
+            box-shadow: 0px 0px 30px #4d1c30;
+    min-width: 100px;
+  }
 }
 
 @media (max-width: 508px) {
@@ -549,6 +617,18 @@ img {
   .mt {
     width: 50%;
   }
+  .button-options {
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+    color: #f96353;
+    text-align: center;
+    border: 3px solid #f96353;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px;
+    background: none;
+  }
 }
 
 @media (max-width: 314px) {
@@ -557,6 +637,19 @@ img {
     width: 800px;
     max-width: 70%;
     bottom: 200px;
+  }
+  .button-options {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+    color: #f96353;
+    text-align: center;
+    border: 3px solid #f96353;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px;
+    background: none;
+    cursor: pointer;
   }
 }
 
@@ -578,6 +671,37 @@ img {
   #second-section {
     position: relative;
     bottom: 200px;
+  }
+  #main-container {
+    height: 900vh;
+    margin: 0% 10% 0% 10%;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 30px #4d1c30;
+            box-shadow: 0px 0px 30px #4d1c30;
+    min-width: 100px;
+  }
+  .nav-button {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+    color: red;
+    text-align: center;
+    border: 3px solid #f96353;
+    border-radius: 5px 15px 5px 15px;
+    padding: 7px;
+    background: none;
+  }
+  .nav-button:hover {
+    background-color: #f96353;
+    color: #fafafa;
+    font-size: small;
+    border-radius: 25px 25px 25px 25px;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
   }
 }
 
@@ -811,5 +935,28 @@ img {
           box-shadow: 0px 0px 10px;
   height: 90%;
   padding-right: 45px;
+}
+
+.svg-pricing {
+  max-width: 95%;
+}
+
+@media (min-width: 1700px) {
+  .circle-container {
+    position: relative;
+    padding: 80px;
+  }
+  .circle-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.55;
+    background-image: url(images/redcircle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 /*# sourceMappingURL=index.css.map */
